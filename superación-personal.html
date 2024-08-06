@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>joven por venir</title>
+  <title>Document</title>
+  <style>
+    .header {
+    background-image: url(assets/img-universitario/SuperacionPersonal1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Linea que aparece debajo de las cards*/
+.linear-white::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #ffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Section Comments*/
+.comments {
+    background-image: url(assets/img-universitario/SuperacionPersonal6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+/*Ajustar la linea blanca encima de la foto*/
+.comments.linear-white::after {
+    top: 0;
+}
+
+/*Ajustar la foto del comentarista*/
+.commets_img {
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 /0.5);
+    border: 3 px ridge #ffff;
+}
+
+.transform-turn {
+    transform: rotate(0.5turn);
+}
+
+.media-object-img {
+    --tamano: 65px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+    float: left;
+}
+
+  </style>
+  <style>
+    .texto-navar {
+      color:white; 
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--este es le menú-->
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark" style="font-size: large;">
+    <a class="navbar-brand p-0 m-0" href="https://www.fundacionzua.org/es/" target="_blank" style="object-fit: cover;">
+      <img src="assets/images/zuá logo.jpg" class="img-fluid" alt="img-logo"
+        style="height: 55px; width: 170px; border-radius: 10px;">
+    </a>
+    <button class="navbar-toggler text-dark bg-white me-2" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav nav-pills nav-fill me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link texto-navar" aria-current="page" href="index.html"><button class="btn btn-outline-success  texto-navar" style="border: 0cap;" type="submit">
+            Inicio
+          </button> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link texto-navar" href="integrantes.html"><button class="btn btn-outline-success  texto-navar" style="border: 0cap;" type="submit">
+            Integrantes
+          </button> </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle texto-navar" href="programas_academicos.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <button class="btn btn-outline-success texto-navar" style="border: 0cap;" type="submit">
+              Programas académicos
+            </button> 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="preuniversitario.html"><button class="btn texto-navar" style="border: 0cap; color: black;" type="submit">
+              Preuniversitario
+            </button> </a></li>
+            <li><a class="dropdown-item" href="universitario.html"><button class="btn texto-navar" style="border: 0cap; color: black;" type="submit">
+              Universitario
+            </button> </a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><button class="btn btn texto-navar" style="border: 0cap; color: black;" type="submit">
+                Superación personal
+              </button> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link texto-navar" href="proyectos.html"><button class="btn btn-outline-success texto-navar" style="border: 0cap;" type="submit">
+            Proyecto
+          </button> </a>
+        </li>
+        <li class="nav-item">
+          <a href="Regístarte.html"> <button class="btn btn-outline-success mt-2 texto-navar" style="border: 0cap;" type="submit">
+            Regístrate
+          </button> 
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success me-2" type="submit">
+          Buscar
+        </button>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+  <!--Header, encargado de la linea blanca-->
+  <header class="header linear-whites">
+    <!--Curvea la imagen-->
+    <img src="cut-header.svg" alt="">
+  </header>
+
+  <!--Experiencia-->
+  <section class="container">
+    <div class="row">
+      <div class="col-12 ">
+        <h3 class=" text-uppercase h1">Superación Personal</h3>
+        <br>
+        <p class="text-justify"  style="font-size: large; text-align: justify;">
+          El programa ofrece la oportunidad de participar en un curso intensivo de salud mental dirigido por una
+          especialista en Psicología y Neuropsicología <strong>Lisnaidu Guzman Rojas.</strong>
+          El camino hacia la superación personal es un viaje de autodescubrimiento, crecimiento y transformación. Es un
+          proceso continuo que implica desarrollar habilidades, superar obstáculos y alcanzar objetivos importantes. En
+          este trayecto, el Programa de Superación Personal proporciona una guía invaluable para potenciar el potencial
+          y alcanzar el éxito en todas las áreas de la vida.
+        </p>
+      </div>
+  </section>
+
+  <!--Media Objects-->
+  <section class="container">
+    <div class="row">
+      <!--Titulos-->
+      <div class="col-12 text text-center">
+        <br>
+        <h3 class=" text-warning text capitalize"> Plan de salud mental</h3>
+        <br>
+      </div>
+
+      <!--Media Object #1-->
+      <ul class="col-md-6 sm-12">
+        <li class="media ">
+          <img src="assets/img-universitario/SuperacionPersonal2.jpeg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h2 class="h6 mb-1">Fortaleciendo la salud mental</h2>
+            <p class="text-justify" style="font-size: large; text-align: justify;">
+              Aprenderás a entender tu mente, identificar emociones y pensamientos, y desarrollar habilidades
+              emocionales para gestionar situaciones difíciles. También recibirás estrategias para superar bloqueos
+              mentales y implementar hábitos que mejoren tu bienestar mental y emocional.
+            </p>
+            <br>
+          </div>
+      </ul>
+      <!--Media Object #2-->
+      <ul class="col-md-6 sm-12">
+        <li class="media">
+          <img src="assets/img-universitario/SuperacionPersonal3.jpeg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h2 class="h6 mb-1">Guiando tu proyecto de vida y emprendimiento</h2>
+            <p class="text-justify" style="font-size: large; text-align: justify;">
+              El programa te guiará en la definición y construcción de tu proyecto de vida, proporcionándote
+              herramientas para establecer metas claras y alcanzables, desarrollar un plan de acción estratégico,
+              potenciar tus habilidades emprendedoras y enfrentar los desafíos del emprendimiento.
+            </p>
+          </div>
+      </ul>
+
+      <!--Media Object #3-->
+      <ul class="col-md-6 sm-12">
+        <li class="media">
+          <img src="assets/img-universitario/SuperacionPersonal4.jpeg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h2 class="h6 mb-1">Enfrentando conflictos y mejorando las relaciones</h2>
+            <p class="text-justify" style="font-size: large; text-align: justify;">
+              El programa te proporcionará herramientas para resolver conflictos de manera asertiva, fortalecer tus
+              relaciones interpersonales, mejorar tu comunicación y gestionar tus emociones en situaciones sociales,
+              permitiéndote reducir el estrés y la ansiedad.
+            </p>
+            <br>
+          </div>
+      </ul>
+
+      <!--Media Object #4-->
+      <ul class="col-md-6 sm-12">
+        <li class="media">
+          <img src="assets/img-universitario/SuperacionPersonal5.jpg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h2 class="h6 mb-1">Neuropsicología</h2>
+            <p class="text-justify" style="font-size: large; text-align: justify;">
+              La neuropsicología es fundamental para el desarrollo personal. Este programa enseña sobre
+              neuroplasticidad, optimización del rendimiento cognitivo, gestión del estrés y ansiedad, y mejora en la
+              toma de decisiones, aplicando principios neuropsicológicos para mejorar la vida diaria.
+            </p>
+          </div>
+      </ul>
+    </div>
+  </section>
+
+
+  <!--Comentarios-->
+  <section class="comments linear-white">
+    <img src="cut-header.svg" alt="" class="transform-turn" />
+    <div class="container">
+      <div class="row">
+        <blockquote class="col-12 text-white text-center">
+          <!--Img-->
+          <img src="assets/img-universitario/Catalina.jpg" alt="Catalina Joaqui" class="commets_img">
+          <!--Comment-->
+          <p>“Cree en tu potencial, trabaja con dedicación y nunca dejes de perseguir tus sueños.”</p>
+          <!--Name-->
+          <footer class="blockquote-footer text-white">
+            <cite>Catalina Joaqui</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!--este el es footer-->
+  <footer class="container-fluid text-white">
+    <div class="row">
+      <div class="col-md-3 bg-dark text-center">
+        <img src="assets/images/zuá logo.jpg" class="figure-img img-fluid rounded mt-5" style="height: 150px;"
+          alt="...">
+      </div>
+      <div class="col-md-5 bg-dark">
+        <h2 style="text-align: center;">SOBRE NOSOTROS</h2>
+        <hr class="mb-4">
+        <p style=" text-justify: justify"> Empoderamos a jóvenes colombianos de bajos recursos mediante educación de
+          calidad,
+          orientación profesional y
+          apoyo integral,
+          superando las barreras del puntaje ICFES para abrir oportunidades hacia un futuro próspero,
+          destacándonos por nuestra excelencia educativa y buscando una sociedad más equitativa.</p>
+      </div>
+      <div class="col-md-4  bg-dark">
+        <h2 style="text-align: center;">SIGUENOS</h2>
+        <hr class="mb-4">
+        <!--Facebook-->
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/profile.php?id=61559971700335" class="text-white" target="_blank"> <i
+                class="fab fa-facebook" style="font-size: 30px;"></i></a>
+          </li>
+          <!--Instagram-->
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/jovenporvenircauca1396?igsh=azkwdzhwbTV2cXAx" class="text-white"
+              target="_blank"> <i class="fab fa-instagram" style="font-size: 30px;"></i></a>
+          </li>
+          <!--youtube-->
+          <li class="list-inline-item">
+            <a href="https://youtube.com/@fundacionzua?si=AaOk--gnDufmVzdN" class="text-white" target="_blank"> <i
+                class="fab fa-youtube" style="font-size: 30px;"></i></a>
+          </li>
+          <!--Google-->
+          <li class="list-inline-item">
+            <a href="https://fundacionzua.org/es/" class="text-white" target="_blank"> <i class="fab fa-google-plus"
+                style="font-size: 30px;"></i></a>
+          </li>
+          <!--Whatsapp-->
+          <li class="list-inline-item">
+            <a href="https://wa.me/qr/27VYGLCFHJRBO1" class="text-white" target="_blank"> <i class="fab fa-whatsapp"
+                style="font-size: 30px;"></i></a>
+          </li>
+        </ul>
+
+        <p>
+          <li class="fas fa-home me-3"></li>Sasaima, Cundinamarca
+        </p>
+        <p>
+          <li class="fas fa-envelope me-3"></li>jovenporvenirdelcauca@gmail.com
+        </p>
+        <p>
+          <li class="fas fa-phone me-3"></li>3145646876
+        </p>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
